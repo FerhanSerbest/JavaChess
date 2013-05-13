@@ -16,8 +16,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * Test Shape.contains
- * @author John B. Matthews
+ *
+ * 
  */
 public class Contains extends JPanel {
 
