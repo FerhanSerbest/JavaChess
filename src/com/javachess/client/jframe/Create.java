@@ -52,6 +52,9 @@ public class Create extends javax.swing.JFrame {
 		});
 	}*/
 	
+	/**
+	 * Constructor that displays the JFrame
+	 */
 	public Create() {
 		super();
 		initGUI();
@@ -61,6 +64,9 @@ public class Create extends javax.swing.JFrame {
 		this.setTitle("Create your account");
 	}
 	
+	/**
+	 * Initialises the JFrame
+	 */
 	private void initGUI() {
 		try {
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -150,6 +156,10 @@ public class Create extends javax.swing.JFrame {
 		}
 	}
 	
+	/**
+	 * Method to handle the creation of the username and password.
+	 * @param evt called when clicking on the Jbutton
+	 */
 	private void jButton1ActionPerformed(ActionEvent evt) {
 			if (jTextField1.getText().length() == 0) {
 				JOptionPane.showMessageDialog(this, "Please type a username.");
@@ -169,6 +179,10 @@ public class Create extends javax.swing.JFrame {
 		
 	}
 	
+	/**
+	 * Method to close the JFrame
+	 * @param evt called when clicking on the Jbutton
+	 */
 	private void jButton2ActionPerformed(ActionEvent evt) {
 		CloseJFrame cj = new CloseJFrame(this);
 	}
