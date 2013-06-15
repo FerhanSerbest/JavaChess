@@ -1,3 +1,8 @@
+/**
+ * Class not done. Needs socket implementation and icon management.
+ */
+
+
 package com.javachess.client.jframe;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -52,11 +57,17 @@ public class Chess extends javax.swing.JFrame {
 		});
 	}
 	
+	/**
+	 * constructor calling the initGUI and the super constructor.
+	 */
 	public Chess() {
 		super();
 		initGUI();
 	}
 	
+	/**
+	 * initiation method for the gui
+	 */
 	private void initGUI() {
 		try {
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);

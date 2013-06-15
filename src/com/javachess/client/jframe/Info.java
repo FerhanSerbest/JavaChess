@@ -36,21 +36,14 @@ public class Info extends javax.swing.JFrame {
 	private JPanel jPanel2;
 	private JLabel jLabel1;
 
+	
 	/**
-	* 
-	
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				Info inst = new Info();
-				inst.setLocationRelativeTo(null);
-				inst.setVisible(true);
-				inst.setTitle("Account Information");
-				inst.setResizable(true);
-			}
-		});
-	}*/
-	
+	 * Constructor that handle the JFrame initialisation. 
+	 * @param username - username passed from Intro.java
+	 * @param wins - wins of the user selected
+	 * @param losses - losses of the user selected
+	 * @param socketClient - Socket connected to Client
+	 */
 	public Info(String username, int wins, int losses, Socket socketClient) {
 		super();
 		initGUI(username, wins, losses, socketClient);
@@ -59,6 +52,7 @@ public class Info extends javax.swing.JFrame {
 		this.setTitle("Account Information");
 		this.setResizable(false);
 	}
+	
 	
 	private void initGUI(String username, int wins, int losses, final Socket socketClient) {
 		try {
@@ -168,6 +162,12 @@ public class Info extends javax.swing.JFrame {
 		}
 	}
 	
+	/**
+	 * handler method that goes to the next JFrame to show the current players
+	 * @param evt - event for pushing on the JButton
+	 * @param username - username of the selected user
+	 * @param socketClient - Socket connected to the client
+	 */
 	private void jButton1ActionPerformed(ActionEvent evt, String username, Socket socketClient) {
 		PlayersConnected pc = new PlayersConnected(username, socketClient);
 	}

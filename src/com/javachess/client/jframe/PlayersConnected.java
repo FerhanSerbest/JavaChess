@@ -100,7 +100,7 @@ public class PlayersConnected extends javax.swing.JFrame {
 			pack();
 			setSize(700, 700);
 		} catch (Exception e) {
-		    //add your error handling code here
+		    //TODO: error handling
 			e.printStackTrace();
 		}
 	}
@@ -111,7 +111,7 @@ public class PlayersConnected extends javax.swing.JFrame {
 	
 	private void jButton1ActionPerformed(ActionEvent evt) {
 		System.out.println("jButton1.actionPerformed, event="+evt);
-		//TODO add your code for jButton1.actionPerformed
+		//TODO code for action handler
 	}
 
 }

@@ -37,20 +37,7 @@ public class Create extends javax.swing.JFrame {
 	private JPanel jPanel2;
 	private JLabel jLabel1;
 
-	/**
-	* 
-	*/
-	/**public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				Create inst = new Create();
-				inst.setLocationRelativeTo(null);
-				inst.setVisible(true);
-				inst.setResizable(true);
-				inst.setTitle("Create your account");
-			}
-		});
-	}*/
+	
 	
 	/**
 	 * Constructor that displays the JFrame
